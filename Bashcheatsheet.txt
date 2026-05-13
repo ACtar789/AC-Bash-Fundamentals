@@ -1,3 +1,29 @@
+Copied some notes taken from linux journey and prior documentation
 
-#!/bin/bash
+Inventory: 
+dir: Lists current directory
+ls: Lists the contents.
+	`ls` for basic listing
+	`ls -l` for detailed listing, 
+	`ls -a` to include hidden files.
+less [options] [filename]: View the contents of a file one page at a time.
+locate [filename]: Search a copy of your filesystem for the specified filename.
+find [pathname] [expression]: Search for files matching a provided pattern.
+grep [options] pattern [filesname]: Search files or output for a particular pattern.
+	-i: ignore/ case insensitive
+	-v: DIsplays only lines not included in the pattern.
+	-w: only matches whole words.
+	-r: Searches all files in the specified directory and its subdirectories.
+	-l: Lists file names only
+cat [filename]: Display file’s contents to the standard output device
+ps [options]: Displays snapshot
+pwd: Displays current pathname
+mv [options] # source destination: Rename or move files or directories.
+
+Create/Delete/Edit/Permissions:
+rm [options]: Remove files and directories
+rmdir [options]: Deletes empty directories
+mkdir [options] # directory: Create a new directory
+touch filename: Creates empty file with assigned name
+
 
