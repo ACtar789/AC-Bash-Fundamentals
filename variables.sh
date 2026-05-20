@@ -7,16 +7,15 @@
 # Let's name the variable:
 	# Use lowercase and underscores for spaces. refrain from special characters, especially at the start.
 	adrienne_can_use_variables="Adrienne"
-	Age_variable="16"
+	Age_variable="I am sixteen"
 	# The green text is the stored variable.
 
 # User input
 	# Variables can also be called when a user need to put in their own information.
-	# To call a variable for the user to input a value, we can use:
-	read adrienne_can_use_variables
+	# To call a variable for the user to input a value, we can use the read command.
 	# We can even use the -p flag for place holder text.
-	read -p "Who are you? " adrienne_can_use_variables
-	read -p "How old are you? " Age_variable
+	read -p "Who are you? " $adrienne_can_use_variables
+	read -p "How old are you? " $Age_variable
 
 # Calling Variables
 	# Declaring and initializing a variable is known as instantation. 
@@ -47,5 +46,13 @@ echo 'Hello $adrienne_can_use_variables, you are $Age_variable and working towar
 	# To run this script, assign permissions:
 	# "chmod 755 variables.sh"
 	# And run: ./varibles.sh
+
+# "Not a valid identifier"
+	# An issue I came across personslly in the making of this script. To reconcile this refer to variable naming conventions earlier in the document.
+	# In my case, I had to ensure my variable did not begin with a number (i.e. Age=16).
+	# Check for spaces around =
+	# Make sure the variable name starts with a letter (not a number)
+	# Remove special characters
+	# Use underscores (_) instead of spaces or dashes
 
 echo "Take this knowledge, $adrienne_can_use_variables, and go forth!"
